@@ -55,7 +55,7 @@ void loop() {
   ch1_value = map(received_data.pwm, 0, 255, 0, 255);
   Serial.print("Radio available: ");
   Serial.println(radio.available());
-  Serial.print("Recibo (");
+  Serial.print("Received (time: ");
   Serial.print(lastRecvTime);
   Serial.print("): "); 
   Serial.println(ch1_value);

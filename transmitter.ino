@@ -34,7 +34,7 @@ void setup() {
 void loop() {
 
   to_send.pwm = map(analogRead(A0), 0, 1024, 0, 255);
-  radio.setPayloadSize(sizeof(to_send.pwm));
+  radio.setPayloadSize(sizeof(to_send));
 
   if(radio.write(&to_send, sizeof(to_send))){
     Serial.print("Sending: ");
