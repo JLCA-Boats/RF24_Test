@@ -22,7 +22,7 @@ void setup() {
   reset_the_Data();
   Serial.begin(9600);
   radio.begin();
-  radio.setAutoAck(false);
+  radio.setAutoAck(true);
   radio.setPALevel(RF24_PA_LOW);
   radio.setChannel(108); 
   radio.openReadingPipe(1,pipeIn);
